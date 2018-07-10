@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="col-sm-11 ml-1 mr-1">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th></th>
+            <!-- <th>LinkedIn Job Role</th>
+            <th>LinkedIn Job Description</th>
+            <th>Industry Selector</th>
+            <th>Skill Framework Job Role</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let rowData of tableData">
+            <td>{{rowData.firstName}}</td>
+            <td>{{rowData.lastName}}</td>
+            <td>{{rowData.lastName}}</td>
+            <td>
+              <form>
+                <select [(ngModel)]="rowData.type" name="type">
+                 <option selected="selected">Data</option>
+                 <option>Security</option>
+                 <option>NA</option>
+                 <option>Software</option>
+               </select>
+               <select [(ngModel)]="rowData.level" name="level">
+                <option>L1</option>
+                <option>L2</option>
+                <option>L3</option>
+                <option>L4</option>
+              </select>
+              <select [(ngModel)]="rowData.role" name="role">
+               <option>Data Analyst</option>
+               <option>System Engineer</option>
+             </select>
+              </form>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+<button (click)="test()">Click</button>

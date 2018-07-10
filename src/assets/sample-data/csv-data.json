@@ -1,0 +1,29 @@
+[
+  {
+    "firstName": "Chua",
+    "lastName": "Kelvin",
+    "school": "SMU",
+    "company": "IBM",
+    "courseType": "Scholarship",
+    "jobTitle": "",
+    "linkedInUrl": "h"
+  },
+  {
+    "firstName": "Seema",
+    "lastName": "Dubey",
+    "school": "SMU",
+    "company": "IBM",
+    "courseType": "Scholarship",
+    "jobTitle": "",
+    "linkedInUrl": ""
+  },
+  {
+    "firstName": "Reena",
+    "lastName": "Mehta",
+    "school": "SMU",
+    "company": "IBM",
+    "courseType": "Scholarship",
+    "jobTitle": "",
+    "linkedInUrl": ""
+  }
+]

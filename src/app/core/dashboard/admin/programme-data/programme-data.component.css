@@ -1,0 +1,13 @@
+.table {
+  border: 3px solid black;
+  margin: 0 50px;
+}
+.csv-data {
+  margin: 0 10px;
+}
+.import-btn {
+  border: 2px solid black;
+  box-shadow: 2px 5px black;
+  width: 100%;
+  margin-top: 40px;
+}

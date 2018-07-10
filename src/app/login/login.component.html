@@ -1,0 +1,29 @@
+<div class="login-form">
+    <div class="row justify-content-md-center">
+      <div class="col-sm-12 col-md-3">
+        <div class="card card-body">
+          <div class="row">
+            <div class="col-sm-12">
+              <img src="../assets/images/logo.png" class="logo" class="img-responsive">
+            </div>
+          </div>
+        <h2 class="card-title text-center welcome">Welcome</h2>
+        <form>
+        <div>
+          <div class="md-form">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <input type="text" class="form-control" [(ngModel)]="userName" name="userName" id="login-email" autocomplete="off" placeholder="Company Email Address">
+          </div>
+          <div class="md-form">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <input class="form-control" type="password" [(ngModel)]="password" name="password" id="login-password" autocomplete="off" autofocus="off" placeholder="Password">
+          </div>
+        </div>
+        <div class="text-center mt-3 mb-3">
+          <button class="btn submit-btn" (click)="login()" >Login</button>
+        </div>
+      </form>
+        </div>
+      </div>
+    </div>
+  </div>

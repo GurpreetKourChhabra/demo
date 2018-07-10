@@ -1,0 +1,43 @@
+<h6>Import Programme Data</h6>
+
+Select file:
+<input type="text">
+<!-- <input type="file" value="Browse"> -->
+<input type="file" id="selectFile" name="selectFile"
+         >
+         <button (click)="uploadFile()"> Upload</button>
+<br />
+<br />
+<div class="row">
+  <div class="col-sm-11 ml-1 mr-1">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>School</th>
+            <th>Company</th>
+            <th>Course Type</th>
+            <th>Job Title</th>
+            <th>LinkedIn Url</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let rowData of tableData">
+            <td>{{rowData.firstName}}</td>
+            <td>{{rowData.lastName}}</td>
+            <td>{{rowData.school}}</td>
+            <td>{{rowData.company}}</td>
+            <td>{{rowData.courseType}}</td>
+            <td>{{rowData.jobTitle}}</td>
+            <td><input type="text" value="{{rowData.linkedInUrl}}"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+<div class="row">
+  <div class="col-sm-3 ml-auto mr-auto">
+    <button class="btn btn-default import-btn">Import</button>
+  </div>
+</div>
